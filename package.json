@@ -75,7 +75,7 @@
     "truffle-contract-size": "^1.0.1"
   },
   "dependencies": {
-    "@truffle/hdwallet-provider": "^1.4.0",
+    "@truffle/hdwallet-provider": "^2.1.15",
     "commander": "^4.0.1",
     "ethereumjs-abi": "^0.6.5",
     "ethereumjs-block": "2.1.0",
