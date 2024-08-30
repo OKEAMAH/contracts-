@@ -25,7 +25,9 @@
     "lint": "npm run lint:sol && npm run lint:js",
     "lint:js": "eslint test/**/*.js",
     "lint:sol:fix": "solium -d contracts/ --fix",
-    "lint:sol": "solium -d contracts/"
+    "lint:sol": "solium -d contracts/",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "pre-commit": [],
   "repository": {
@@ -87,6 +89,8 @@
     "nunjucks": "^3.2.0",
     "openzeppelin-solidity": "2.2.0",
     "solidity-rlp": "^2.0.0",
-    "truffle-plugin-verify": "^0.6.7"
-  }
+    "truffle-plugin-verify": "^0.6.7",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
