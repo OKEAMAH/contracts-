@@ -25,7 +25,9 @@
     "lint": "npm run lint:sol && npm run lint:js",
     "lint:js": "eslint test/**/*.js",
     "lint:sol:fix": "solium -d contracts/ --fix",
-    "lint:sol": "solium -d contracts/"
+    "lint:sol": "solium -d contracts/",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "pre-commit": [],
   "repository": {
@@ -78,15 +80,17 @@
     "@truffle/hdwallet-provider": "^2.1.15",
     "commander": "^4.0.1",
     "ethereumjs-abi": "^0.6.5",
-    "ethereumjs-block": "2.1.0",
-    "ethereumjs-tx": "1.3.7",
+    "ethereumjs-block": "2.2.2",
+    "ethereumjs-tx": "2.1.2",
     "ethereumjs-util": "6.0.0",
-    "ganache-cli": "^6.8.0-istanbul.0",
-    "glob": "^7.1.6",
+    "ganache-cli": "^6.12.2",
+    "glob": "^9.0.0",
     "merkle-patricia-tree": "4.0.0",
-    "nunjucks": "^3.2.0",
+    "nunjucks": "^3.2.4",
     "openzeppelin-solidity": "2.2.0",
     "solidity-rlp": "^2.0.0",
-    "truffle-plugin-verify": "^0.6.7"
-  }
+    "truffle-plugin-verify": "^0.6.7",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
